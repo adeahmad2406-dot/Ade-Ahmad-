@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - ADE AHMAD AFRIZAL</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f5f9;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: white;
+            }
+            .cv-container {
+                box-shadow: none !important;
+                border: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="py-10 px-4 min-h-screen flex flex-col items-center justify-center">
+
+    <!-- Tombol Cetak / PDF -->
+    <div class="no-print mb-6 flex gap-4">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full shadow-lg transition duration-300 flex items-center gap-2">
+            <i class="fas fa-print"></i> Cetak / Simpan PDF
+        </button>
+    </div>
+
+    <!-- Dokumen CV Utama -->
+    <div class="cv-container bg-white w-full max-w-4xl rounded-2xl shadow-xl overflow-hidden border border-slate-100 flex flex-col md:flex-row">
+        
+        <!-- Kolom Kiri / Sidebar -->
+        <div class="bg-slate-900 text-white md:w-1/3 p-8 flex flex-col items-center text-center">
+            <!-- Foto Diri -->
+            <div class="relative w-40 h-48 rounded-xl overflow-hidden border-4 border-blue-500 shadow-md mb-6 bg-slate-800 flex items-center justify-center">
+                <img id="profile-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Foto Formal Ade Ahmad Afrizal" class="w-full h-full object-cover">
+            </div>
+
+            <h1 class="text-2xl font-bold tracking-wide uppercase text-blue-400 mb-1">ADE AHMAD AFRIZAL</h1>
+            <p class="text-slate-400 text-sm mb-6">Siswa / Pelajar</p>
+
+            <div class="w-full border-t border-slate-800 my-4"></div>
+
+            <!-- Informasi Pribadi -->
+            <div class="w-full text-left space-y-4 text-sm">
+                <h2 class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2">Informasi Diri</h2>
+                
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-user mt-1 text-blue-400 w-4"></i>
+                    <div>
+                        <p class="text-slate-400 text-xs">Umur</p>
+                        <p class="font-medium">17 Tahun</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-venus-mars mt-1 text-blue-400 w-4"></i>
+                    <div>
+                        <p class="text-slate-400 text-xs">Jenis Kelamin</p>
+                        <p class="font-medium">Laki-laki</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-calendar-alt mt-1 text-blue-400 w-4"></i>
+                    <div>
+                        <p class="text-slate-400 text-xs">Tanggal Lahir</p>
+                        <p class="font-medium">21 April 2009</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-map-marker-alt mt-1 text-blue-400 w-4"></i>
+                    <div>
+                        <p class="text-slate-400 text-xs">Alamat</p>
+                        <p class="font-medium leading-snug">Kampung Mulyasri</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full border-t border-slate-800 my-6"></div>
+
+            <!-- Hobi -->
+            <div class="w-full text-left">
+                <h2 class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-3">Hobi & Minat</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-800 text-blue-300 px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-2 border border-slate-700">
+                        <i class="fas fa-fish text-blue-400"></i> Memelihara Ikan
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan / Konten Utama -->
+        <div class="md:w-2/3 p-8 md:p-10 bg-white flex flex-col justify-between">
+            <div class="space-y-8">
+                
+                <!-- Profil Singkat -->
+                <div>
+                    <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wider mb-3 flex items-center gap-2 border-b pb-2">
+                        <i class="fas fa-user-circle text-blue-600"></i> Tentang Saya
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Saya adalah seorang siswa berusia 17 tahun yang aktif, memiliki komitmen tinggi, dan berdedikasi. Memiliki ketertarikan dalam bidang organisasi serta memiliki hobi memelihara ikan yang melatih kesabaran dan ketelitian.
+                    </p>
+                </div>
+
+                <!-- Pengalaman Organisasi / Ekstrakurikuler -->
+                <div>
+                    <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wider mb-4 flex items-center gap-2 border-b pb-2">
+                        <i class="fas fa-users text-blue-600"></i> Pengalaman Organisasi & Ekstrakurikuler
+                    </h2>
+                    <div class="relative pl-6 border-l-2 border-blue-500 space-y-4">
+                        <div class="relative">
+                            <!-- Titik Timeline -->
+                            <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-blue-600 rounded-full border-2 border-white"></div>
+                            <h3 class="font-bold text-slate-800 text-base">ROHIS (Kerohanian Islam)</h3>
+                            <p class="text-xs text-blue-600 font-medium mb-1">Anggota Aktif</p>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Aktif mengikuti kegiatan kerohanian di sekolah, berpartisipasi dalam perencanaan acara keagamaan, serta mempererat silaturahmi dan kerjasama antar anggota.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keahlian -->
+                <div>
+                    <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wider mb-4 flex items-center gap-2 border-b pb-2">
+                        <i class="fas fa-star text-blue-600"></i> Keahlian
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Kerjasama Tim (Teamwork)</span>
+                                <span class="text-blue-600">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Pemeliharaan Ikan</span>
+                                <span class="text-blue-600">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Dasar Informatika / Komputer</span>
+                                <span class="text-blue-600">80%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Manajemen Waktu</span>
+                                <span class="text-blue-600">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Dokumen -->
+            <div class="mt-8 pt-4 border-t text-center text-xs text-slate-400">
+                Tugas Informatika &bull; Dibuat dengan HTML & Tailwind CSS
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
